@@ -1,0 +1,50 @@
+body{
+    background: #EFEFEF;
+    padding: 30;
+}
+html{
+    overflow-y: scroll;
+}
+ul{
+ margin-bottom: 0;   
+}
+.accordion{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.question{
+    border-top: 1px solid #EEE;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+}
+.question h2{
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+}
+.glyphicon{
+    position: absolute;
+    left: 1000px;
+    top: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)  all;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: .8s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.answer p{
+    padding: 20px;
+}
+.accordion li.open .glyphicon{
+    transform: rotate(180deg);
+}
+.accordion li.open .answer {
+    max-height: 150px;
+}
