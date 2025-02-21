@@ -1,0 +1,153 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.modal {
+  background-color: white;
+  width: 350px;
+  height: 190px;
+  margin: auto;
+  padding: 25px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.active {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.open-modal-btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #667eea;
+    color: white ;
+    font-size: large;
+    cursor: pointer;
+}
+
+.open-modal-btn:hover{
+    padding: 11px;
+    background-color: #5f75d4;
+}
+
+.show-overlay {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.close-btn-container {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+#closeBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+#closeBtn:hover {
+  color: #ff4757;
+}
+
+.modal-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: black;
+  gap: 15px;
+}
+
+.modal-left {
+  background-color: #242424;
+  color: white;
+  width: 120px;
+  height: 160px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.special-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sale-text {
+  font-size: 28px;
+  color: #ff4757;
+}
+
+.discount-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.discount-value {
+  font-size: 24px;
+  color: #fbc531;
+}
+
+.modal-right .modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-right .modal-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.discount-btn {
+  display: inline-block;
+  padding: 12px 16px;
+  background: #ff4757;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-top: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.discount-btn:hover {
+  background: #e84118;
+  transform: scale(1.05);
+}

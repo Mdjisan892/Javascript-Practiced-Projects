@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/3744e377b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Modal Pop-Up</title>
+  </head>
+  <body>
+    <div id="modalOpacity" class="modal-overlay"></div>
+
+    <button class="open-modal-btn" id="modalOpen">Open Modal</button>
+
+    <div id="modal" class="modal">
+      <div>
+        <div class="close-btn-container">
+          <button id="closeBtn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <main class="modal-main">
+          <div class="modal-left">
+            <p class="special-text">
+              Special
+              <span class="sale-text">Sale %</span>
+            </p>
+            <div class="discount-text">
+              <p>
+                Save up to
+                <span class="discount-value">45%</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-right">
+            <p class="modal-title">
+              Get access to the <br />
+              best books on designing
+            </p>
+            <p class="modal-subtitle">Click below</p>
+            <a class="discount-btn">Get Discount</a>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
