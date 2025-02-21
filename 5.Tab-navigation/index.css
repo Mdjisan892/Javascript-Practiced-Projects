@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.pages {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 2;
+    background-color: white; 
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    border: 2px solid black;
+    height: calc(100% - 40px); 
+    width: 100%;
+    top: 40px; 
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.p-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.c-active {
+    visibility: visible; 
+    opacity: 1;
+    border-bottom-color: white;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
