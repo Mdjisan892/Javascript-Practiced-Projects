@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="submitBtn" class="form">
+        <h2 class="form-title">Sign Up</h2>
+        <hr class="divider" />
+
+        <div class="form-control">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" required />
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" required />
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <label for="pass2">Confirm Password:</label>
+          <input type="password" id="pass2" required />
+          <small></small>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

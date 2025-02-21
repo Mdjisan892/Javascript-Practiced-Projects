@@ -1,0 +1,114 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-control.correct {
+  border: 3px solid green;
+}
+.form-control.incorrect {
+  border: 3px solid red;
+}
+small {
+  color: red;
+  border: 0px;
+  visibility: hidden;
+}
+input {
+  outline: none;
+}
+
+.divider {
+  width: 60px;
+  border: 2px solid #ef4444;
+  margin: 10px auto;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-control label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #ef4444;
+  background-color: #fff8f3;
+}
+
+form small {
+  display: block;
+  margin-top: 5px;
+  color: red;
+}
+
+.submit-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #d43f3f;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .form-control input {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
