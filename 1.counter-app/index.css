@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+main{
+    border: 1px solid;
+    padding: 3rem;
+}
+p{
+    font-size: 5rem;
+    margin: 0;
+    margin-left: 2rem;
+}
+.p{
+    margin-left: 1rem;
+}
+button{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+}
+.increase{
+    padding: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+
+}
+.increase:hover{
+    transform: scale(1.1);
+}
+.increase:active{
+    background-color: rgb(229, 231, 232);
+
+}
+.decrease{
+    padding: 0.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.decrease:hover{
+    transform: scale(1.1);
+}
+.decrease:active{
+    background-color: rgb(229, 231, 232);
+}
+.reset{
+    margin-left: 1.2rem;
+}
+.reset:hover{
+    transform: scale(1.1);
+}
+.reset:active{
+    background-color: rgb(229, 231, 232);
+
+}
+.active{
+    background-color: brown;
+}
