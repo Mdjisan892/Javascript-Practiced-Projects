@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    height: 100vh;
+    background-color: gray;
+}
+div{
+ border: 1px solid whitesmoke;
+ height: 170px;
+ width: 300px;
+ margin: 100px auto;
+}
+#saveInput{
+    font-size: 50px;
+    margin-top: 10px;
+}
+#numberInput{
+    margin-top: 40px;
+}
