@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body{
+    text-align: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+p{
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    border: 1px solid gray;
+    height: 200px;
+    width: 700px;
+    grid-template-columns: 1fr 1fr; 
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transform: translateX(200% );
+    transition: transform 0.9s ease;
+}
+.box:nth-of-type(odd){ /* Even / odd */
+    transform: translateX(-200%);
+}
+.box.effect{
+  transform: translateX(0);
+}
+
+.left, .right{
+    border-left: 1px solid gray;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.right{
+    margin-left: -2px;
+}
+.left{
+    border-left:0;
+    background-color: cadetblue;
+}
