@@ -1,0 +1,23 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+}
+#typeHeading::after{
+ color: blue;
+ content: "|";
+ animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
