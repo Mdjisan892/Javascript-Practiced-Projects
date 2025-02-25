@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    align-items: center;
+}
+nav{
+    width: 98%;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 500;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+}
+.sticky + main {
+    margin-top: 70px;
+    padding-top: 20px;
+}
+h3{
+   margin-top: 35px;
+}
+.nextStikyEle{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1000;
+    width: 98%;
+    height: 80px;
+    background-color: brown;
+    margin-top: 0;
+}
+/* .h1-sticky{
+    position: fixed;
+    top: 0;
+} */
