@@ -1,0 +1,23 @@
+body{
+    background: #f3f3f3;
+    margin: 20px;
+}
+section{
+    width: 70%;
+    background: #fff;
+    box-shadow: 0 0 5px 0;
+    padding: 10px;
+    margin: auto auto;
+    text-align: center;
+}
+.wordsDisplay{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+meanings.synonyms
+
+ */
