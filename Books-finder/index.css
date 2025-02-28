@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+.main{
+    margin: 0 auto;
+    padding: 8px;
+    border: 1px solid ;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+#result{
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: start;
+}
+#result p {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+#result p span{
+    margin-left: 8px;
+}
