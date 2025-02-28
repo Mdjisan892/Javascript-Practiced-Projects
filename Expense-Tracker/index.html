@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <main>
+        <h1>Expense Tracker</h1><hr>
+        <section>
+
+            <h2>Your Balance</h2>
+            <h1 id="total">0000$</h1>
+
+            <div class="inc-exp">
+                <div class="income">
+                  <p>Total Income:</p>
+                  <p id="plusMoney">450$</p>
+                </div>
+                <div class="expenses">
+                    <p>Total Expenses:</p>
+                    <p id="minusMoney">-450$</p>
+                  </div>
+            </div>
+
+            <h2>Add a new Transiton</h2>
+            <hr>
+            <form class="transitions">
+                <label for="incomeDes" class="desInput"><span>Description:</span></label>
+                <input type="text" name="" id="incomeDes" placeholder="Enter description...">
+
+                <label for="amountInput">Inc/Exp:</label>
+                <input type="text" name="" id="amountInput"  placeholder="Enter amount...ex :(+10)/(-10)">
+              </form>
+
+              <div class="button-container">
+                <button id="addNew">Add a New EXPENSE</button>
+             </div>
+
+             <h3>History</h3>
+             <hr>
+             <div class="history">
+              <ul id="ul">
+
+              </ul>
+            </div>        
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
