@@ -1,0 +1,113 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #1a73e8;
+}
+
+.racipe-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #0f56c0;
+}
+
+.racipe-Information {
+    text-align: center;
+}
+
+#image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #1a73e8;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+li:nth-child(even) {
+    background-color: #0f56c0;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    #searchInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #searchBtn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
