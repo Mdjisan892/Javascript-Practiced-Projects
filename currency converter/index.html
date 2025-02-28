@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="container">
+        <h1>Currency Converter</h1>
+        <div class="converter">
+           
+            <section class="section">
+                <div class="input-group">
+                    <label for="form-currency">From :</label>
+                    <select name="" id="form-currency">
+       
+                    </select>
+                  </div>
+       
+                  <div class="input-group">
+                    <label for="to-currency">To :</label>
+                    <select name="" id="to-currency"></select>
+                  </div>
+                  
+                </section>
+                
+                <div class="input-group">
+                   <label for="amount">Amount :</label>
+                   <input type="number" id="amount"  placeholder="Enter amount">
+                </div>
+
+           <button id="convert">Convert</button>
+           <div id="result"></div>
+        </div>
+    </main>
+
+<script src="app.js"></script>    
+</body>
+</html>
+
+
+<!-- fetch(API)
+ .then(res => res.json())
+ .then(data => {
+  const currencys = Object.keys(data.conversion_rates);
+  currencys.forEach(currency => {
+    const 
+  })
+ }) -->
