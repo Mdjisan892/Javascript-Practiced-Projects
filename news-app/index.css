@@ -1,0 +1,99 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    background-color:  #296ca8;
+}
+form{
+    margin: 10px;
+    padding: 15px;
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 5px;
+}
+input{
+    height: 30px;
+    width: 300px;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+#searchBtn{
+    height: 30px;
+    width: 70px;
+}
+main{
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+    width: 77.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 5px;
+    text-wrap: wrap;
+}
+
+.posts{
+    height: 400px;
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+}
+img{
+    height: 300px;
+    width: 400px;
+}
+.btn{
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.loader {
+    opacity: 0;
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    margin-left: 40rem;
+    transition: opacity 0.3s ease-in;
+}
+  
+.loader.show {
+    opacity: 1;
+}
+  
+.circle {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    animation: bounce 0.5s ease-in infinite;
+}
+  
+.circle:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+  
+.circle:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+  
+@keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+}
