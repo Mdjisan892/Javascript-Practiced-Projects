@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins' , sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3c2091;
+    /* display: flex; */
+    min-height: 100vh;
+}
+.timer-x{
+    font-size: 60px;
+    margin-top: 15px ;
+    margin-left: 600px;
+    display:flex;
+    color: #bd962b;
+    position: absolute;
+}
+.container{
+    margin: 0 auto;
+    margin-top: 15px ;
+    margin-bottom: -20px;
+    padding: 1rem ;
+    padding-top: 50px;
+    background-color: #bd962b;
+    height: 490px;
+    width: 510px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 19px 9px;
+    size: auto;
+    display: block;
+}
+.quets-input{
+    font-size: 20px;
+    /* display: block; */
+    margin-top: 25vh;
+    margin-left: 8px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 10rem;
+    width: 90%;
+    background: transparent;
+    outline: none;
+}
+.quote-input:focus{
+     border-color: black;
+}
+.quote-display{
+    font-size: 20px;
+    margin-left: 40px; 
+    /* margin-top: 5px; */
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 5rem;
+}
+.correct{
+    color: green;
+}
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+#btn{
+    height: 40px;
+    width: 70px;
+   margin-left: 600px;
+   margin-top: 30px;
+   border: 1px solid ;
+   border-radius: 5px;
+}
+#btn:hover{
+    transform: scale(1.1);
+}
+h1{
+    text-align: center;
+    color: #bd962b;
+}
+hr{
+    width: 600px;
+    margin-left: 335px;
+}
+p{
+    margin-top: -1px;
+    color: #3c2091;
+    font-weight: bold;
+}
